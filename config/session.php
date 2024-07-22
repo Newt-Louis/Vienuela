@@ -200,7 +200,7 @@ return [
     */
 
     'same_site' => env('SESSION_SAME_SITE', 'lax'),
-
+/*mặc định ban đầu của same_site là lax*/
     /*
     |--------------------------------------------------------------------------
     | Partitioned Cookies
