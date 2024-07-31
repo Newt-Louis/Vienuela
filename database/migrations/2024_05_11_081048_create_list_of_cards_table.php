@@ -15,7 +15,7 @@ return new class extends Migration
             $table->bigIncrements('id_list');
             $table->unsignedBigInteger('id_board');
             $table->string('title_list',36);
-            $table->integer('position_list')->unique();
+            $table->integer('position_list')->unique()->default(0);
             $table->timestamps();
             $table->softDeletes('deleted_at',0);
         });

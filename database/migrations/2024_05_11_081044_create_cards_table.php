@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamp('start_date')->nullable();
             $table->timestamp('due_date')->nullable();
             $table->string('title_card');
-            $table->integer('position_card')->unique();
+            $table->integer('position_card')->unique()->default(0);
             $table->timestamps();
             $table->softDeletes('deleted_at',0);
         });
